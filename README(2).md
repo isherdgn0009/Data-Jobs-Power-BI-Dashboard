@@ -1,90 +1,61 @@
-# Data Jobs Dashboard with Power Bi
+## Key Insights
 
-![Dashboard Page 1](Images/Screenshot%202026-11-13%20210800.png)
+All figures come from the 2024 data job postings dataset used in this dashboard (478,895 postings).
 
-## Introduction
+### Market Overview
 
-This dashboard was created for **Job Seekers, Job Transitioners, and Job Swappers** to solve a common problem: information about the data job market is scattered and hard to grasp. Using a *real-world dataset of 2024 data science job postings* (including titles, salaries, and locations), this project provides a single, easy-to-use interface to explore market trends and compensation.
+![Data Jobs Dashboard](<Images/Screenshot 2026-11-13 210800.png>)
 
-## Skills Showcased
+- **Data Engineer is the most in-demand role** with about 129K postings (27%), followed by Data Analyst (113K, 24%) and Data Scientist (98K, 20%).
+- **The median yearly salary is $113,250** and the median hourly rate is $47.62, which earns the dashboard's 3 out of 5 star salary rating.
+- **Full-time roles dominate** at 82% of postings. Contractor roles are next at about 6%.
+- **The US leads by a wide margin** with about 140K postings (29%), ahead of India (8%) and the UK (7%).
+- **LinkedIn is the biggest source of postings** at roughly 36%, well ahead of BeBee (11%) and Indeed (6%).
 
-- **⚙️ Data Transformation (ETL) with Power Query:** Cleaned, shaped, and prepared the raw data for analysis by handling blanks, changing data types, and creating new columns.
+### Salary by Job Title
 
-- **🧮 Implicit Measures:** Formulated measures to derive key insights and KPIs like `Median Yearly Salary` and `Job Count`.
-- **📊 Core Charts:** Utilized **Column, Bar, Line,** and **Area Charts** to compare job counts and track trends over time.
-- **🗺️ Geospatial Analysis:** Leveraged **Map Charts** to visualize the global distribution of jobs.
-- **🔢 KPI Indicators & Tables:** Used **Cards** to display key metrics and **Tables** to provide granular, sortable data.
-- **🎨 Dashboard Design:** Designed an intuitive and visually appealing layout, exploring both common and uncommon chart types to best tell the data story.
-- **🖱️ Interactive Reporting:**
-  - **Slicers:** To dynamically filter the report by Job Title.
-  - **Buttons & Bookmarks:** To create a seamless navigation experience.
-  - **Drill-Through:** To navigate from a high-level summary to a contextual view.
+![Salary by Job Title](<Images/Screenshot 2026-11-13 221709.png>)
 
-  ## Dashboard Overview
+- **Senior Data Scientist and Machine Learning Engineer pay the most**, at about $155K per year each. Senior Data Engineer follows at $146.5K.
+- **Data Analyst pays the least** at a $90K median, even though it is the second most posted role.
+- **Data Engineers earn about $126K**, roughly $36K more than Data Analysts, so moving from analysis toward engineering is a clear pay step.
+- **Hourly rates follow the same order.** Machine Learning Engineer, Software Engineer, and Data Engineer sit near $60 per hour, while Data Analyst sits near $33.
 
-###  High-Level Market View
+### Job Title Deep Dive: Data Engineer
 
-![Dashboard Page 1](<Images/Screenshot 2026-11-13 210800.png>)
+![Data Engineer Drill Through](<Images/Screenshot 2026-11-13 211431.png>)
 
-This page gives a quick, high-level look at the data job market. Cards at the top show headline numbers like total job count and median yearly salary. The charts below compare job counts across titles and locations and track how postings change over time. The Job Title slicer filters the whole page, and drill-through lets you jump into a detailed view of any role.
+- **Median pay is $126K per year and $59 per hour** for the most posted role in the dataset.
+- **Only 15% of Data Engineer postings are work from home**, and 10% mention health insurance.
+- **47% of postings don't mention a degree**, one of the highest shares of any role.
+- **89% of postings are full-time** and 9% are contractor roles.
 
-###  Job Title Drill Through
-
-![Dashboard Page 2](<Images/Screenshot 2026-11-13 211431.png>)
-
-This is the deep-dive page. From the main dashboard, you can drill through to this view to get specific details for a single job title, including salary ranges, work-from-home stats, top hiring platforms, and a global map of job locations.
-
-## Conclusion
-
-This dashboard showcases how Power BI can transform raw job posting data into a powerful tool for career analysis. It allows users to slice, filter, and drill through data to make informed decisions about their career paths.
-
-## Other Pages
-
-Beyond the main dashboard, this project includes a set of pages where I practiced and tested individual Power BI features. A Home page with a page navigator links to every page, and each page has a home button to jump back.
-
-### Home Page and Home Button
-
-![Home Page](<Images/Screenshot 2026-11-13 224347.png>)
-
-**What it does:** The Home page is the starting point of the report. A page navigator lists every page as a button, so you can jump to any page in one click. Every practice page also has a home button that takes you straight back here.
-
-**Functions:**
-- **Page navigation:** One click on any button opens that page.
-- **Return to Home:** The home button on each page brings you back to the main menu from anywhere in the report.
-- **Hint for users:** An information button on the Home page explains how to use the buttons (hold Ctrl while clicking in Power BI Desktop).
-
-**How it eases the user interface:**
-- **Easier to explore:** The report reads like a simple app menu, so you never have to hunt through page tabs.
-- **Less clicking:** Any page is at most two clicks away, one back to Home and one to the next page.
-- **Consistent layout:** The home button sits in the same spot on every page, so users always know where to find it.
-- **Easy for new users:** Even someone who has never opened the report can find their way around from the first screen.
-
-### Column and Bar Charts
-
-![Column and Bar Charts](<Images/Screenshot 2026-11-13 221709.png>)
-
-Compares salaries by job title, by country, and by whether a posting mentions a degree. A Job Title slicer filters the page, and two bookmarks (Filtered and Unfiltered) let you flip between views with a button.
-
-### Line Graphs
-
-![Line Graphs](<Images/Screenshot 2026-11-13 221747.png>)
-
-Tracks job postings over time with a stacked area chart and a line chart with min and average reference lines. A combo chart puts monthly job postings next to average hourly salary.
-
-### Pie Charts and Scatterplot
+### Work Style and Requirements
 
 ![Pie Charts and Scatterplot](<Images/Screenshot 2026-11-13 221811.png>)
 
-Shows what share of postings are work from home and what share don't mention a degree. A treemap breaks down schedule types such as full-time, contractor, and internship. A scatterplot compares hourly and yearly salary by job title.
+- **Only 13% of postings are work from home**, but those that list a salary pay more, with a median of $129.5K compared with $112.5K for non-remote roles.
+- **About 33% of postings don't mention a degree.** Data Engineer, Software Engineer, and Cloud Engineer postings skip it the most (about 48%), while Machine Learning Engineer (4%) and Data Scientist (7%) almost always ask for one.
+- **Degree mentions don't change pay much.** The median is $110K without a degree mention and $113.75K with one.
+- **Higher yearly salary goes with higher hourly pay.** The scatterplot shows a clear upward trend across roles, with Senior Data Scientist the main outlier on the hourly side.
 
-### Other Charts
+### Trends Over Time
 
-![Other Charts](<Images/Screenshot 2026-11-13 221930.png>)
+![Line Graphs](<Images/Screenshot 2026-11-13 221747.png>)
 
-Explores less common visuals: a ribbon chart of median yearly salary over time, a waterfall chart for a data analyst salary breakdown, and a funnel chart of applicants by stage.
+- Posting volume was steady at roughly 42K to 55K per month from January to August 2024.
+- It then dropped sharply, from about 30K in September to a low of about 14K in November, before recovering to about 31K in December.
+- Average hourly salary also eased down through the year as posting volume fell.
 
-### Cards and KPIs
+### Highest Paying Roles Globally
 
-![Cards and KPIs](<Images/Screenshot 2026-11-13 222150.png>)
+![Column and Bar Charts](<Images/Screenshot 2026-11-13 221709.png>)
 
-Highlights key figures with card visuals, gauges for median yearly salary, and a KPI visual that tracks yearly median salary over time.
+- Most salary data comes from the US, where Machine Learning Engineer and Data Engineer sit at the top of the pay scale.
+- Other countries have far fewer salary records, so their bars swing widely and should be read with care.
+
+### Things to Keep in Mind
+- **Salary data is sparse.** Only about 4% of postings list a yearly salary and about 2% list an hourly rate, so salary insights reflect a small sample.
+- **Some roles have very few salary records.** For example, Cloud Engineer has only 61 yearly salary entries, so treat its numbers with caution.
+- **The late-2024 drop** may come from how the data was collected rather than real hiring changes.
+- **The waterfall and funnel charts on the Other Charts page use sample data** (salary breakdown and hiring funnel), not the job postings dataset.
